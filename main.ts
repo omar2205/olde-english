@@ -17,7 +17,7 @@ app.post('/to-olde', async (ctx: Context) => {
 app.get('/*', async (ctx) => {
   try {
     const { pathname } = new URL(ctx.request.url)
-    const file_url = join('static', pathname)
+    const file_url = join('static', pathname === '/' ? 'index.html' : pathname)
     const file_stats = await Deno.stat(file_url)
     const file_type = contentType(extname(file_url)) ||
       'application/octet-stream'
