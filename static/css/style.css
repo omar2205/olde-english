@@ -1,0 +1,32 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #eee;
+}
+
+.card {
+  width: min(24rem, 90vw);
+  min-height: 8rem;
+  margin: 3rem auto;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 0 20px rgb(17 17 17 / 5%);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.card input[type="text"] {
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+}
+
+.card label {
+  margin-top: 1rem;
+}
+
+p {
+  text-align: center;
+}
